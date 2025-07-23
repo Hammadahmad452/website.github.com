@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All in One Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .box {
+      height: 200px;
+      float: left;
+      text-align: center;
+      line-height: 200px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .box img {
+      width: 100px;
+      height: 100px;
+      vertical-align: middle;
+    }
+
+    .fixed-box {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: orange;
+      padding: 10px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 500px;
+      left: 20px;
+      background-color: teal;
+      color: white;
+      padding: 10px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      div[style*="float: left"] {
+        width: 100% !important;
+        float: none !important;
+        height: auto !important;
+      }
+
+      img {
+        height: auto !important;
+      }
+
+      iframe, video {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      table, th, td {
+        font-size: 14px;
+      }
+
+      header, nav, footer {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <h1> MY SHOPE </h1>
+  </header>
+
+  <header style="background-color:orange; color:red;">
+    <h1><b> WELCOME!</b></h1>
+  </header>
+
+  <nav style="background-color:violet; color:red;">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+  </nav>
+
+  <!-- Two Boxes -->
+  <div style="width: 50%; float: left; background-color: lightblue; height: 700px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/005A1671_EMTKPT5-057.webp?v=1753093706&width=640" alt="Description" style="width: 100%; height: 670px; object-fit: cover;">
+  </div>
+  <div style="width: 50%; float: left; background-color: lightgreen; height: 700px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/005A2358_EMTWCS5-010.webp?v=1753093890&width=960" alt="Description" style="width: 100%; height: 670px; object-fit: cover;">
+  </div>
+
+  <div class="relative-box">Relative Positioned Box</div>
+  <div class="absolute-box">Absolute Positioned Box</div>
+
+  <!-- Three Boxes -->
+  <div style="width: 33.33%; float: left; background-color: lightcoral; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/005A2253_EMTWC5-35935.webp?v=1753094417&width=640" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+  <div style="width: 33.33%; float: left; background-color: lightseagreen; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/005A2674_EMTK5-99530.webp?v=1753094272&width=640" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+  <div style="width: 33.34%; float: left; background-color: lightgoldenrodyellow; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/005A1500_EMTKST5-99516.webp?v=1753095453&width=640" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+
+  <!-- Table -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>Math</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>Sara</td>
+      <td>Science</td>
+      <td>90</td>
+    </tr>
+  </table>
+
+  <!-- Iframe -->
+  <h3>Iframe (Google)</h3>
+  <iframe src="https://www.google.com" width="100%" height="30"></iframe>
+
+  <!-- Video -->
+  <h3>Video</h3>
+  <video controls width="100%">
+    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <p>This video is not useable</p>
+
+  <!-- Four Boxes -->
+  <div style="width: 25%; float: left; background-color: lightblue; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/25_B_BoysKurtaShalwar_EBTKS5-4024_1.webp?v=1753093684&width=640" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+  <div style="width: 25%; float: left; background-color: lightgreen; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/0N9A8823EBTKS5-4012thumbnail.webp?v=1753094659&width=960" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+  <div style="width: 25%; float: left; background-color: lightpink; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/0N9A8718EBTKP25-019thumbnail.webp?v=1753094580&width=960" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+  <div style="width: 25%; float: left; background-color: lightsalmon; height: 550px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/24_B_BoysKurtaPajama_EBTKP24-001_1_f6c9dbfb-206e-430c-a11d-376daadd02a1.jpg?v=1711601957&width=960" alt="Description" style="width: 100%; height: 500px; object-fit: cover;">
+  </div>
+
+  <p>This image is used for websites</p>
+
+  <!-- Two More Boxes -->
+  <div style="width: 50%; float: left; background-color: lightgreen; height: 710px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/files/0N9A8779_EBTKP5-012_thumbnail.webp?v=1753094947&width=960" alt="Description" style="width: 100%; height: 670px; object-fit: cover;">
+  </div>
+  <div style="width: 50%; float: left; background-color: lightblue; height: 710px; padding: 20px; box-sizing: border-box;">
+    <img src="https://edenrobe.com/cdn/shop/products/24_B_BoysKurtaPajama_EBTKP24-003_1.jpg?v=1710149433&width=960" alt="Description" style="width: 100%; height: 670px; object-fit: cover;">
+  </div>
+
+  <p>This box is used for images</p>
+
+  <!-- Audio -->
+  <h3>Audio</h3>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- Form -->
+  <section>
+    <form style="background-color:lightblue; color:red;">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <section>
+    <footer style="background-color:red; color:skyblue;">
+      <h2><b>&copy; My Fashion System</b></h2>
+      <p>Thank you for watching my website</p>
+    </footer>
+  </section>
+
+</body>
+</html>
